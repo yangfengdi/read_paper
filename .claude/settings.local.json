@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init)",
+      "Bash(git add .)",
+      "Bash(git commit -m \"$\\(cat <<'EOF'\nInitial commit: Add read paper project with batch execution scripts and documentation\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git branch -M main)",
+      "Bash(git remote add origin https://github.com/yangfengdi/read_paper.git)",
+      "Bash(git push -u origin main)",
+      "Bash(git remote set-url origin git@github.com:yangfengdi/read_paper.git)",
+      "Bash(brew install gh)",
+      "Bash(gh auth login)",
+      "Bash(git credential-osxkeychain get 2>&1 <<EOF\nprotocol=https\nhost=github.com\nEOF)",
+      "Bash(git config --global credential.helper osxkeychain)",
+      "Bash(git init && git add . && git commit -m \"$\\(cat <<'EOF'\nInitial commit: Add read_paper project\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}
